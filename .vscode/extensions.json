@@ -1,6 +1,7 @@
 {
-  "recommendations": [
-    "VisualStudioToolsForUnity.vscode-unity-tools",
-    "ms-dotnettools.csdevkit"
-  ]
+    "recommendations": [
+        "VisualStudioToolsForUnity.vscode-unity-tools",
+        "ms-dotnettools.csdevkit",
+        "visualstudiotoolsforunity.vstuc"
+    ]
 }

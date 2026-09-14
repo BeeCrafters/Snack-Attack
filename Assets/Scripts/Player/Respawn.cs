@@ -28,6 +28,7 @@ public class Respawn : MonoBehaviour
     {
         attackGenerators = FindObjectsByType<AttackGenerator>(FindObjectsSortMode.None);
         currentlyDead = true;
+        GetComponent<PlayerMovementBetter>().isStunned = true;
         rb.simulated = false;
         transform.localScale = new Vector3(0, 0, 0);
         foreach (AttackGenerator generator in attackGenerators)
@@ -42,6 +43,7 @@ public class Respawn : MonoBehaviour
         //audioManager.PlaySFX(audioManager.hit);
         rb.simulated = true;
         currentlyDead = false;
+        GetComponent<PlayerMovementBetter>().isStunned = false;
         transform.localScale = new Vector3(1, 1, 1);
     }
 }
